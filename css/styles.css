@@ -1,3 +1,7 @@
+li{
+  list-style: none;
+}
+
 *{
   margin: 0;
   padding: 0;
@@ -9,16 +13,13 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+  flex-direction: column-reverse;
+  flex-wrap: nowrap;
   padding: 20px;
   margin: 20px;
 }
 
-.header-nav {
-  flex-direction: column-reverse;
-  list-style: none;
-
-}
-header{
+.header-parte-top{
     background-color:  #B2A797;
     text-align: center;
     margin: 0 auto;
@@ -28,12 +29,19 @@ body {
   background-color: #B2A797;
 }
 
-nav {
-  background-color: #314E5A;
+.nav-parte-top{
   display: flex;
   list-style: none;
-  flex-direction: column;
+  gap: 20px;
   align-items: center;
+}
+
+nav{
+  display: flex;
+  background-color: #314E5A;
+  flex-direction:column;
+  align-items: center;
+  
 }
 
 .diseños-cuidados {
@@ -97,7 +105,7 @@ justify-content: space-between;
   border: 8px solid grey
 }
 
-.CatalogoTop {
+.CatalogoTop{
   display: flex;
   flex-direction: column-reverse ;
   background-color: #D9D9D9;
@@ -108,13 +116,63 @@ justify-content: space-between;
   border: 8px solid grey
 }
 
-@media (max-width:360px) {
-  header{ 
-    justify-content: space-between;
-    background-color: aliceblue;
-    flex-direction: column;
-    align-items: center;
-    padding: top;
+@media (max-width:960px){
+.header-parte-top{
+  max-width: 100px;
+}
 
+.nav-parte-top{
+  background-color: aquamarine;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.ul-secundario{
+  flex-direction: column;
+  justify-content:space-between;
+}
+
+.CatalogoTop {
+  text-align-last:center;
+  max-width: 300px;
+  justify-content: flex-start;
+  margin: 40px;
+  border: 10px solid rgb(5, 5, 5)
+}
+}
+
+@media (max-width:540px){
+
+  .header-parte-top{
+    max-width: 100px;
+  }
+
+  .nav-parte-top{
+    background-color: cadetblue;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+    margin: 60px;
+  }
+  
+
+  .ul-secundario{
+    flex-direction: column;
+    justify-content:space-between;
+    margin: 40px;
+  }
+
+  main h2{
+    margin: 60px;
+    background-color: #203B28;
+  }
+
+  .CatalogoTop {
+    text-align-last:start;
+    max-width: 150px;
+    justify-content: flex-start;
+    margin: 60px;
+    border: 2px solid rgb(5, 5, 5)
   }
 }
