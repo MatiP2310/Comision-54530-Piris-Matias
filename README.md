@@ -1,1 +1,2 @@
-## Proyecto Amalia-ShowRoom-Tercera-Pre-Entrega
+<<<<<<< HEAD
+## Proyecto Amalia-ShowRoom-Tercera-Pre-Entrega-Reentrega
